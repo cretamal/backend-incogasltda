@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": false
+    },
+    "sub_categories": {
+      "collection": "sub-category",
+      "via": "category"
+    },
+    "products": {
+      "via": "categories",
+      "collection": "product"
+    },
+    "contents": {
+      "collection": "content",
+      "via": "category"
+    }
+  }
+}

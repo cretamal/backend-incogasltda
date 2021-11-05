@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ui_kit_images",
+  "info": {
+    "name": "Image",
+    "icon": "image"
+  },
+  "options": {},
+  "attributes": {
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

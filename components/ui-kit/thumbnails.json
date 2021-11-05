@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_ui_kit_thumbnails",
+  "info": {
+    "name": "Thumbnails",
+    "icon": "money-check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "label": {
+      "type": "richtext"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-kit.button"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

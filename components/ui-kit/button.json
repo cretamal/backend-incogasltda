@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_kit_buttons",
+  "info": {
+    "name": "button",
+    "icon": "long-arrow-alt-right"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

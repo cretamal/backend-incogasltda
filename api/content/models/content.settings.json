@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "label": {
+      "type": "richtext"
+    },
+    "typeRel": {
+      "model": "type"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-kit.button"
+    },
+    "Head": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-kit.head"
+    },
+    "Thumbnails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-kit.thumbnails"
+    },
+    "Page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui-kit.page"
+    },
+    "category": {
+      "via": "contents",
+      "model": "category"
+    }
+  }
+}
